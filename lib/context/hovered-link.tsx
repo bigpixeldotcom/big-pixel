@@ -4,9 +4,9 @@ import { createContext, useState, useContext } from 'react'
  
 export const HoveredLinkContext = createContext({
   face: 'front',
-  setFace: (face: string) => {},
+  setFace: () => {},
   url: '/',
-  setUrl: (url: string) => {},
+  setUrl: () => {},
 })
  
 export default function HoveredLinkProvider({
