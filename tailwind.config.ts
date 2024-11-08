@@ -11,9 +11,43 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "rgb(251, 235, 0)",
       },
+      fontFamily: {
+  			sans: ['var(--font-geist-sans)'],
+  			mono: ['var(--font-geist-mon)']
+  		},
+      typography: ({ theme }: { theme: any }) => ({
+        pixel: {
+          css: {
+            '--tw-prose-body': theme('colors.zinc[50]'),
+            '--tw-prose-headings': theme('colors.primary'),
+            '--tw-prose-lead': theme('colors.zinc[200]'),
+            '--tw-prose-links': theme('colors.primary'),
+            '--tw-prose-bold': theme('colors.white'),
+            '--tw-prose-counters': theme('colors.primary'),
+            '--tw-prose-bullets': theme('colors.primary'),
+            '--tw-prose-hr': theme('colors.zinc[500]'),
+            '--tw-prose-quotes': theme('colors.zinc[100]'),
+            '--tw-prose-quote-borders': theme('colors.primary'),
+            '--tw-prose-captions': theme('colors.zinc[700]'),
+            '--tw-prose-code': theme('colors.lime[500]'),
+            '--tw-prose-pre-code': theme('colors.lime[500]'),
+            '--tw-prose-pre-bg': theme('colors.zinc[950]'),
+            '--tw-prose-pre-border': theme('colors.zinc[500]'),
+            '--tw-prose-blockquote': theme('colors.zinc[100]'),
+            '--tw-prose-blockquote-border': theme('colors.primary'),
+            '--tw-prose-th-borders': theme('colors.white'),
+            '--tw-prose-td-borders': theme('colors.zinc[500]'),
+          },
+        },
+      }),
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/forms'),
+  ],
 };
 export default config;
