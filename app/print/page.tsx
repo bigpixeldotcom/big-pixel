@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { Branding, Branding2 } from '@/markdown';
 import {
-  FadeUp,
   InFromLeft,
   InFromRight,
   FadeIn
@@ -9,7 +8,6 @@ import {
 import PrintLayers from '@/components/print/print-layers';
 import MKDFtext from '@/public/images/print/mkdf-full-txt.jpg';
 import MKDFimage from '@/public/images/print/mkdf-header.jpg'
-import MKDFColours from '@/public/images/print/mkdf-img-01.jpg';
 import Dickens from '@/public/images/print/dickens.jpg';
 
 export default function PrintPage() {

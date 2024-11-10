@@ -11,9 +11,9 @@ type HoverProps = {
  
 export const HoveredLinkContext = createContext<HoverProps>({
   face: 'front',
-  setFace: (face: string) => {},
+  setFace: () => {},
   url: '/',
-  setUrl: (url: string) => {},
+  setUrl: () => {},
 })
  
 export default function HoveredLinkProvider({
