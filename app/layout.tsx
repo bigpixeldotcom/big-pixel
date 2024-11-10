@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
+import { Analytics } from '@vercel/analytics/react';
 import localFont from 'next/font/local';
 import './globals.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
@@ -35,12 +37,17 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang='en'>
         <head>
-          <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-          <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-          <link rel="shortcut icon" href="/favicon.ico" />
-          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-          <meta name="apple-mobile-web-app-title" content="Big Pixel" />
-          <link rel="manifest" href="/site.webmanifest" />
+          <Script
+            src='https://cdn-cookieyes.com/client_data/211462d71c077e0dc631e691/script.js'
+            strategy='beforeInteractive'
+            id='cookieyes'
+          />
+          <link rel='icon' type='image/png' href='/favicon-96x96.png' sizes='96x96' />
+          <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+          <link rel='shortcut icon' href='/favicon.ico' />
+          <link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
+          <meta name='apple-mobile-web-app-title' content='Big Pixel' />
+          <link rel='manifest' href='/site.webmanifest' />
         </head>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen`}
@@ -54,6 +61,7 @@ export default function RootLayout({
               <Footer />
             </div>
           </HoveredLinkProvider> 
+          <Analytics />
         </body>
       </html>
     </ClerkProvider>
