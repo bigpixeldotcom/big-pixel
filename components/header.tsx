@@ -51,11 +51,18 @@ const disciplines = [
   },
 ];
 
+type HoverProps = {
+  face: string;
+  setFace: (face: string) => void;
+  url: string;
+  setUrl: (url: string) => void;
+};
+
 export default function NavBar() {
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
-  const { setFace, setUrl } = useHoveredLink();
+  const { setFace, setUrl } = useHoveredLink() as HoverProps;
 
   return (
     <header className='w-full'>

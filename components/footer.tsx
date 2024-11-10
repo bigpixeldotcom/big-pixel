@@ -41,7 +41,7 @@ const year = new Date().getFullYear();
 
 export default function Footer() {
   return (
-    <footer className='w-full'>
+    <footer className='mt-12 w-full'>
       <div className='mx-auto max-w-7xl px-6 py-8 md:flex md:items-center md:justify-between lg:px-8'>
         <div className='flex justify-center gap-x-6 md:order-2'>
           {navigation.map((item: NavigationItem) => (

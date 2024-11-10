@@ -1,12 +1,19 @@
 'use client'
  
 import { createContext, useState, useContext } from 'react'
+
+type HoverProps = {
+  face: string;
+  setFace: (face: string) => void;
+  url: string;
+  setUrl: (url: string) => void;
+};
  
-export const HoveredLinkContext = createContext({
+export const HoveredLinkContext = createContext<HoverProps>({
   face: 'front',
-  setFace: () => {},
+  setFace: (face: string) => {},
   url: '/',
-  setUrl: () => {},
+  setUrl: (url: string) => {},
 })
  
 export default function HoveredLinkProvider({

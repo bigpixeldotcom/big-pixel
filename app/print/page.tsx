@@ -6,6 +6,7 @@ import {
   InFromRight,
   FadeIn
 } from '@/components/animations';
+import PrintLayers from '@/components/print/print-layers';
 import MKDFtext from '@/public/images/print/mkdf-full-txt.jpg';
 import MKDFimage from '@/public/images/print/mkdf-header.jpg'
 import MKDFColours from '@/public/images/print/mkdf-img-01.jpg';
@@ -21,22 +22,10 @@ export default function PrintPage() {
           </h1>
         </div>
         <div className='mx-auto max-w-4xl'>
-          <FadeUp>
-            <Image
-              src={MKDFimage}
-              alt='MKDF typeface sketch'
-              className='rounded-lg shadow-xl'
-            />
-          </FadeUp>
-        </div>   
-        <div className='prose prose-sm prose-pixel md:prose-base max-w-4xl'>
-          <Branding />
-        </div> 
-        <div className='mx-auto max-w-4xl'>
           <InFromLeft amount={1}>
             <div className='p-8 bg-white rounded-t-lg shadow-xl'>
               <Image
-                src={MKDFtext}
+                src={MKDFimage}
                 alt='MKDF full typeface'
                 className=''
               />
@@ -45,13 +34,19 @@ export default function PrintPage() {
           <InFromRight amount={0.5}>
             <div className='mt-2 px-8 py-12 bg-white rounded-b-lg shadow-xl'>
               <Image
-                src={MKDFColours}
+                src={MKDFtext}
                 alt='MKDF full colours'
                 className=''
               />
             </div>
           </InFromRight>
         </div>  
+        <div className='prose prose-sm prose-pixel md:prose-base max-w-4xl'>
+          <Branding />
+        </div> 
+        <div className='mx-auto max-w-4xl'>
+          <PrintLayers />
+        </div>
         <div className='prose prose-sm prose-pixel md:prose-base max-w-4xl'>
           <Branding2 />
         </div>

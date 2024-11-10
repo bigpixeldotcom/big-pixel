@@ -2,8 +2,10 @@ import Image from 'next/image';
 import { Digital1, Digital2 } from '@/markdown';
 import {
   FadeUp,
-  InFromLeft
+  InFromLeft,
+  InFromRight,
 } from '@/components/animations';
+import WebsiteSpline from '@/components/digital/website-spline';
 import Plankton1 from '@/public/images/digital/plankton-01.jpg';
 import MyCalibre from '@/public/images/digital/my-calibre.png';
 
@@ -30,20 +32,24 @@ export default function PrintPage() {
             <Digital1 />
           </div> 
         </div>
-        <div className='mx-auto max-w-4xl'>
-          <InFromLeft amount={0.5}>
-            <Image
-              src={MyCalibre}
-              alt='The My Calibre website'
-              height={740}
-              className='ml-12'
-            />
+        <div className='-mt-8 mx-auto max-w-4xl'>
+          <InFromLeft amount={1}>
+            <WebsiteSpline />
           </InFromLeft>
         </div> 
-        <div className='-mt-8 mx-auto max-w-4xl'>
+        <div className='-mt-4 mx-auto max-w-4xl'>
           <div className='prose prose-sm prose-pixel md:prose-base max-w-4xl'>
             <Digital2 />
           </div> 
+        </div>
+        <div className='mx-auto max-w-4xl'>
+          <InFromRight amount={0.5}>
+            <Image
+              src={MyCalibre}
+              alt='My Calibre website'
+              className='rounded-lg shadow-xl'
+            />
+          </InFromRight>
         </div>
       </div>    
     </main> 
