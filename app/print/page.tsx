@@ -6,6 +6,7 @@ import {
   FadeIn
 } from '@/components/animations';
 import PrintLayers from '@/components/print/print-layers';
+import Everything from '@/public/images/print/everything.jpg';
 import MKDFtext from '@/public/images/print/mkdf-full-txt.jpg';
 import MKDFimage from '@/public/images/print/mkdf-header.jpg'
 import Dickens from '@/public/images/print/dickens.jpg';
@@ -43,7 +44,13 @@ export default function PrintPage() {
           <Branding />
         </div> 
         <div className='mx-auto max-w-4xl'>
-          <PrintLayers />
+          <InFromLeft amount={0.5}>
+            <Image
+              src={Everything}
+              alt='CMYK print layers'
+              className='rounded-lg shadow-xl'
+              />
+          </InFromLeft>
         </div>
         <div className='mt-24 lg:mt-12 prose prose-sm prose-pixel md:prose-base max-w-4xl'>
           <Branding2 />
