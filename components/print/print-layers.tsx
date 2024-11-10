@@ -39,7 +39,7 @@ export default function PrintLayers() {
             transition: 'opacity 1s, transform 1s'
           }}
         >
-          <Image src={EveryY} alt="Y-plate" className='absolute top-0 left-0 rounded-lg' />
+          <Image src={EveryY} alt="Y-plate" className='absolute z-10 top-0 left-0 rounded-lg' />
         </div>
       </div>
       <div className='mix-blend-multiply'>
@@ -50,7 +50,7 @@ export default function PrintLayers() {
             transition: 'opacity 1.5s, transform 1.5s'
           }}
         >
-          <Image src={EveryM} alt="M-plate" className='absolute top-0 left-0 rounded-lg' />
+          <Image src={EveryM} alt="M-plate" className='absolute z-10 top-0 left-0 rounded-lg' />
         </div>
       </div>
       <div className='mix-blend-multiply'>
@@ -61,7 +61,7 @@ export default function PrintLayers() {
             transition: 'opacity 2s, transform 2s'
           }}
         >
-          <Image src={EveryC} alt="C-plate" className='absolute top-0 left-0 rounded-lg' />
+          <Image src={EveryC} alt="C-plate" className='absolute z-10 top-0 left-0 rounded-lg' />
         </div>
       </div>
     </div>
