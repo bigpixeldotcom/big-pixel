@@ -11,7 +11,7 @@ import MyCalibre from '@/public/images/digital/my-calibre.png';
 
 export default function PrintPage() {
   return (
-    <main className='mt-12 max-w-7xl mx-6 md:mx-auto overflow-x-hidden'>
+    <main className='lg:mt-12 max-w-7xl mx-6 md:mx-12 lg:mx-auto overflow-x-hidden'>
       <div className='flex flex-col gap-y-16'>
         <div className='max-w-4xl justify-start'>
           <h1 className='text-4xl lg:text-8xl font-black text-left'>

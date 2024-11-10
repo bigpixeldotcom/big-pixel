@@ -12,7 +12,7 @@ import Dickens from '@/public/images/print/dickens.jpg';
 
 export default function PrintPage() {
   return (
-    <main className='mt-12 max-w-7xl mx-6 md:mx-auto overflow-x-hidden'>
+    <main className='lg:mt-12 max-w-7xl mx-6 md:mx-12 lg:mx-auto overflow-x-hidden'>
       <div className='flex flex-col gap-y-16'>
         <div className='max-w-4xl justify-start'>
           <h1 className='text-4xl lg:text-8xl font-black text-left'>
@@ -45,7 +45,7 @@ export default function PrintPage() {
         <div className='mx-auto max-w-4xl'>
           <PrintLayers />
         </div>
-        <div className='prose prose-sm prose-pixel md:prose-base max-w-4xl'>
+        <div className='mt-24 lg:mt-12 prose prose-sm prose-pixel md:prose-base max-w-4xl'>
           <Branding2 />
         </div>
         <div className='mx-auto max-w-4xl'>

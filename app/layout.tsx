@@ -46,9 +46,9 @@ export default function RootLayout({
           className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen`}
         >
           <HoveredLinkProvider>
-            <div className='min-h-full w-full flex flex-col items-center justify-between'>
+            <div className='min-h-full sm:flex sm:flex-col items-center md:justify-between'>
               <NavBar />
-              <div className='flex-1 max-w-7xl'>
+              <div className='max-w-7xl'>
                 {children}
               </div>
               <Footer />

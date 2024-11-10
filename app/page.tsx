@@ -9,7 +9,7 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className='max-w-7xl mx-6 md:mx-auto -mt-12 mb-12'>
+      <div className='max-w-7xl mx-6 lg:mx-auto -mt-12 mb-12'>
         <div className='flex flex-col gap-y-8 justify-center items-center'>
           <h1 className='text-6xl md:text-8xl font-black text-center'>Big Pixel</h1>
           <p className='text-center text-base md:text-2xl text-zinc-300'>

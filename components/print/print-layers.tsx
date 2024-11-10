@@ -19,7 +19,7 @@ export default function PrintLayers() {
 
 
   return (
-    <div className='relative w-[890px] h-[720px]' ref={ref}>
+    <div className='relative w-[312px] h-[240px] md:w-[660px] md:h-[420px] lg:w-[896px] lg:h-[672px]' ref={ref}>
       <div>
         <div
           style={{
