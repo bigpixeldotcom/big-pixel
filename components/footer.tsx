@@ -43,13 +43,19 @@ export default function Footer() {
   return (
     <footer className='mt-12 w-full'>
       <div className='mx-auto max-w-7xl px-6 py-8 md:flex md:items-center md:justify-between lg:px-8'>
-        <div className='flex justify-center gap-x-6 md:order-2'>
-          {navigation.map((item: NavigationItem) => (
-            <Link key={item.name} href={item.href} target='_blank' className='text-zinc-500 hover:text-primary transition-colors ease-in-out duration-300'>
-              <span className='sr-only'>{item.name}</span>
-              <FontAwesomeIcon icon={item.icon} fixedWidth />
-            </Link>
-          ))}
+        <div className='flex flex-col space-y-2 items-center md:items-start md:order-2'>
+          <div className='flex justify-start gap-x-6'>
+            {navigation.map((item: NavigationItem) => (
+              <Link key={item.name} href={item.href} target='_blank' className='text-zinc-500 hover:text-primary transition-colors ease-in-out duration-300'>
+                <span className='sr-only'>{item.name}</span>
+                <FontAwesomeIcon icon={item.icon} fixedWidth />
+              </Link>
+            ))}
+          </div>
+          <div className='flex space-x-10 text-xs/6 text-zinc-500 mt-2'>
+            <Link href='/policy/privacy' className='hover:text-primary transition-colors ease-in-out duration-300'>Privacy Policy</Link>
+            <Link href='/policy/cookie' className='hover:text-primary transition-colors ease-in-out duration-300'>Cookie Policy</Link>
+          </div>
         </div>
         <div className='flex flex-col space-y-2 items-center md:items-start md:order-1'>
           <p className='mt-8 text-sm/6 text-zinc-500 md:order-1 md:mt-0'>
