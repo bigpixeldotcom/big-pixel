@@ -5,7 +5,6 @@ import {
   InFromRight,
   FadeIn
 } from '@/components/animations';
-import PrintLayers from '@/components/print/print-layers';
 import Everything from '@/public/images/print/everything.jpg';
 import MKDFtext from '@/public/images/print/mkdf-full-txt.jpg';
 import MKDFimage from '@/public/images/print/mkdf-header.jpg'
