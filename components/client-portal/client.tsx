@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import imageUrlBuilder from '@sanity/image-url';
-import { PortableText } from '@portabletext/react'
 import { sanityClient } from '@/lib/clients/sanity';
 
 const builder = imageUrlBuilder(sanityClient)
