@@ -42,11 +42,14 @@ export default function ClientPortal({
 }: {
   client: Client;
 }) {
+
+  const icon = client.icon.asset._ref ? urlFor(client.icon.asset._ref).url() : '/favicon-96x96.png'
+  
   return (
     <div className='w-full flex flex-col gap-y-12'>
       <div className='flex gap-x-4 items-center'>
         <Image
-          src={urlFor(client.icon.asset._ref).url()}
+          src={icon}
           alt={client.companyName}
           width={50}
           height={50}
