@@ -1,54 +1,54 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
-import "@/app/styles/base.css";
-import { ConsentManager } from "./consent-manager";
+import type { Metadata } from 'next';
+import localFont from 'next/font/local';
+import '@/app/styles/base.css';
+import { ConsentManager } from './consent-manager';
 
-import { config } from "@fortawesome/fontawesome-svg-core";
-import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
 
-config.autoAddCss = false
+config.autoAddCss = false;
 
 const nexa = localFont({
   src: [
     {
       path: './fonts/nexa-800.woff2',
       weight: '800',
-      style: 'normal'
+      style: 'normal',
     },
     {
       path: './fonts/nexa-900.woff2',
       weight: '900',
-      style: 'normal'
-    }
+      style: 'normal',
+    },
   ],
-  variable: '--font-nexa'
-})
+  variable: '--font-nexa',
+});
 
 const nexaText = localFont({
   src: [
     {
       path: './fonts/nexa-text-400.woff2',
       weight: '400',
-      style: 'normal'
+      style: 'normal',
     },
     {
       path: './fonts/nexa-text-600.woff2',
       weight: '600',
-      style: 'normal'
+      style: 'normal',
     },
     {
       path: './fonts/nexa-text-700.woff2',
       weight: '700',
-      style: 'normal'
+      style: 'normal',
     },
     {
       path: './fonts/nexa-text-900.woff2',
       weight: '900',
-      style: 'normal'
-    }
+      style: 'normal',
+    },
   ],
-  variable: '--font-nexa-text'
-})
+  variable: '--font-nexa-text',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://big-pixel.com'),
@@ -89,7 +89,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-}
+};
 
 export default function RootLayout({
   children,
@@ -97,14 +97,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="antialiased">
-      <body
-        className={`${nexa.variable} ${nexaText.variable} min-h-full max-w-full`}
-      >
-        <ConsentManager>
-          {children}
-        </ConsentManager>
+    <html lang="en">
+      <body className={`${nexa.variable} ${nexaText.variable} antialiased`}>
+        <ConsentManager>{children}</ConsentManager>
       </body>
     </html>
-  )
+  );
 }
