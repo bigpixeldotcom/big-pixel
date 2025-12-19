@@ -152,7 +152,7 @@
 
 :root {
   --background: oklch(1 0 0); /* White */
-  --foreground: oklch(20.9% 0.018 234.2); /* black-900 */
+  --foreground: oklch(36.2% 0.023 234.3); /* metal-700 */
   --dot-color: oklch(0.8412 0.0138 281.52); /* grey-40 */
 }
 

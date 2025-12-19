@@ -23,7 +23,7 @@ export default function FloatingButtons() {
               <button
                 type="button"
                 className={clsx(
-                  'mt-16 float-1 bg-red-600 text-white text-lg md:text-2xl lg:text-3xl font-headline font-black px-8 md:px-12 lg:px-14 py-4 md:py-6 lg:py-7 rounded-full shadow-2xl cursor-pointer',
+                  'mt-16 lg:mr-6 float-1 bg-red-600 text-white text-lg md:text-2xl lg:text-3xl font-headline font-black px-8 md:px-12 lg:px-14 py-4 md:py-6 lg:py-7 rounded-full shadow-2xl cursor-pointer flex items-center justify-center',
                   isHovered && 'paused'
                 )}
                 onMouseEnter={() => setIsHovered(true)}
@@ -39,7 +39,7 @@ export default function FloatingButtons() {
               <button
                 type="button"
                 className={clsx(
-                  'lg:mt-24 float-2 bg-blue-300 text-white text-lg md:text-2xl lg:text-3xl font-headline font-black px-8 md:px-12 lg:px-14 py-4 md:py-6 lg:py-7 rounded-full shadow-2xl cursor-pointer',
+                  'lg:mt-24 lg:ml-6 float-2 bg-blue-300 text-white text-lg md:text-2xl lg:text-3xl font-headline font-black px-8 md:px-12 lg:px-14 py-4 md:py-6 lg:py-7 rounded-full shadow-2xl cursor-pointer flex items-center justify-center',
                   isHovered && 'paused'
                 )}
                 onMouseEnter={() => setIsHovered(true)}
@@ -57,7 +57,7 @@ export default function FloatingButtons() {
               <button
                 type="button"
                 className={clsx(
-                  'lg:mt-6 float-3 bg-green-400 text-white text-lg md:text-2xl lg:text-3xl font-headline font-black px-8 md:px-12 lg:px-14 py-4 md:py-6 lg:py-7 rounded-full shadow-2xl cursor-pointer',
+                  'lg:mt-6 lg:mr-6 float-3 bg-green-400 text-white text-lg md:text-2xl lg:text-3xl font-headline font-black px-8 md:px-12 lg:px-14 py-4 md:py-6 lg:py-7 rounded-full shadow-2xl cursor-pointer flex items-center justify-center',
                   isHovered && 'paused'
                 )}
                 onMouseEnter={() => setIsHovered(true)}
@@ -73,7 +73,7 @@ export default function FloatingButtons() {
               <button
                 type="button"
                 className={clsx(
-                  'lg:mt-18 float-4 bg-purple-700 text-white text-lg md:text-2xl lg:text-3xl font-headline font-black px-8 md:px-12 lg:px-14 py-4 md:py-6 lg:py-7 rounded-full shadow-2xl cursor-pointer',
+                  'lg:mt-18 lg:ml-6 float-4 bg-purple-700 text-white text-lg md:text-2xl lg:text-3xl font-headline font-black px-8 md:px-12 lg:px-14 py-4 md:py-6 lg:py-7 rounded-full shadow-2xl cursor-pointer flex items-center justify-center',
                   isHovered && 'paused'
                 )}
                 onMouseEnter={() => setIsHovered(true)}

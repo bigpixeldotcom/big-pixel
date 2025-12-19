@@ -30,7 +30,7 @@ export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
 
   return (
-    <header className="fixed top-6 lg:top-9 w-full">
+    <header className="z-50 fixed top-6 lg:top-9 w-full">
       <div className="w-full max-w-6xl px-6 lg:px-0 lg:mx-auto">
         <nav
           aria-label="Global"
