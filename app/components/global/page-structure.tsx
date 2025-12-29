@@ -7,7 +7,8 @@ export default function PageStructure({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="font-sans bg-white dark:bg-black-900">
+    <div className="font-sans">
+      <div className="top-0 left-0 w-full h-32 md:h-48 bg-linear-to-b from-grey-40 to-white dark:from-black dark:to-black-950" />
       <NavBar />
       {children}
       <Footer />

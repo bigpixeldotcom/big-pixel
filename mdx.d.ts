@@ -3,12 +3,13 @@ declare module '*.mdx' {
 
   export const frontmatter: {
     title: string;
+    subtitle?: string;
     date: string;
-    coverImage: string;
-    excerpt: string;
-    ogImage: {
-      url: string;
-    };
+    coverImage?: string;
+    excerpt?: string;
+    description?: string;
+    ogImage: string;
+    twitterImage: string;
     preview?: boolean;
   };
 

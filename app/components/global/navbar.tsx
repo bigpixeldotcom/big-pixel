@@ -13,7 +13,7 @@ const navList = [
     label: 'About Big Pixel®',
   },
   {
-    href: '/work',
+    href: '/what',
     label: 'What I do',
   },
   {
@@ -34,7 +34,7 @@ export default function NavBar() {
       <div className="w-full max-w-6xl px-6 lg:px-0 lg:mx-auto">
         <nav
           aria-label="Global"
-          className="w-full p-4 bg-white/60 dark:bg-white/10 rounded-full outline-1 outline-white dark:outline-metal-600 backdrop-blur-sm inline-flex justify-between items-center overflow-hidden"
+          className="w-full p-4 bg-white/60 dark:bg-white/10 rounded-full outline-1 outline-white dark:outline-metal-600 backdrop-blur-sm inline-flex justify-between items-center overflow-hidden shadow-lg shadow-metal-300/30 dark:shadow-black"
         >
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5">
