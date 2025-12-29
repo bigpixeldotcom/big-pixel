@@ -14,10 +14,6 @@ const nextConfig: NextConfig = {
   },
 };
 
-const withMDX = createMDX({
-  options: {
-    remarkPlugins: ['remark-gfm'],
-  },
-});
+const withMDX = createMDX({});
 
 export default withMDX(nextConfig);

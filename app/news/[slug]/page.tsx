@@ -11,19 +11,6 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function News({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
-  const post = getAllNews().find((post) => post.slug === slug);
-
-  if (!post) {
-    notFound();
-  }
-
-  const content = await markdownToHtml(post.content || '');
-
-  return <div dangerouslySetInnerHTML={{ __html: content }} />;
-}
-
 export async function generateMetadata(props: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
@@ -43,4 +30,17 @@ export async function generateMetadata(props: {
       images: [post.data.ogImage.url],
     },
   };
+}
+
+export default async function News({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const post = getAllNews().find((post) => post.slug === slug);
+
+  if (!post) {
+    notFound();
+  }
+
+  const content = await markdownToHtml(post.content || '');
+
+  return <div dangerouslySetInnerHTML={{ __html: content }} />;
 }
