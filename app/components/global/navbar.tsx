@@ -16,14 +16,14 @@ const navList = [
     href: '/what',
     label: 'What I do',
   },
-  {
+  /* {
     href: '/client',
     label: 'Client work',
   },
   {
     href: '/news',
     label: 'News',
-  },
+  }, */
 ];
 
 export default function NavBar() {

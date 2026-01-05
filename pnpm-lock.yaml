@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@awesome.me/kit-89a9106b13':
-        specifier: ^1.0.136
-        version: 1.0.136
+        specifier: ^1.0.139
+        version: 1.0.139
       '@c15t/nextjs':
         specifier: ^1.8.2
         version: 1.8.2(@opentelemetry/api@1.9.0)(@opentelemetry/instrumentation@0.203.0(@opentelemetry/api@1.9.0))(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(next@16.1.1(@babel/core@7.28.5)(@opentelemetry/api@1.9.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(typeorm@0.3.28)(use-sync-external-store@1.6.0(react@19.2.0))
@@ -68,6 +68,9 @@ importers:
       remark-html:
         specifier: ^16.0.1
         version: 16.0.1
+      zod:
+        specifier: ^4.3.5
+        version: 4.3.5
     devDependencies:
       '@tailwindcss/postcss':
         specifier: ^4
@@ -100,8 +103,8 @@ packages:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
 
-  '@awesome.me/kit-89a9106b13@1.0.136':
-    resolution: {integrity: sha512-Z5re8FBe0V9uJABD3BSoT/zXIBx4p6Baygeo1ah7nX6sByNdCnP3OHFcvIIZ7hZq4MCCu2Uo2ba+r371YnEX8w==}
+  '@awesome.me/kit-89a9106b13@1.0.139':
+    resolution: {integrity: sha512-RFDM9iSukEyVfY7wDQdeNRoLhzmz3BXDM490MdyDmUfP4bxIIMNDfCk3Si3tPIPKS2rMn+fBM8q2+tmi9kQpgA==}
     engines: {node: '>=16'}
 
   '@babel/code-frame@7.27.1':
@@ -3506,8 +3509,8 @@ packages:
     peerDependencies:
       zod: ^3.25.0 || ^4.0.0
 
-  zod@4.1.13:
-    resolution: {integrity: sha512-AvvthqfqrAhNH9dnfmrfKzX5upOdjUVJYFqNSlkmGf64gRaTzlPwz99IHYnVs28qYAybvAlBV+H7pn0saFY4Ig==}
+  zod@4.3.5:
+    resolution: {integrity: sha512-k7Nwx6vuWx1IJ9Bjuf4Zt1PEllcwe7cls3VNzm4CQ1/hgtFUK2bRNG3rvnpPUhFjmqJKAKtjV576KnUkHocg/g==}
 
   zustand@5.0.9:
     resolution: {integrity: sha512-ALBtUj0AfjJt3uNRQoL1tL2tMvj6Gp/6e39dnfT6uzpelGru8v1tPOGBzayOWbPJvujM8JojDk3E1LxeFisBNg==}
@@ -3534,7 +3537,7 @@ snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
 
-  '@awesome.me/kit-89a9106b13@1.0.136':
+  '@awesome.me/kit-89a9106b13@1.0.139':
     dependencies:
       '@fortawesome/fontawesome-common-types': 7.1.0
 
@@ -3650,7 +3653,7 @@ snapshots:
       '@orpc/openapi': 1.8.1(@opentelemetry/api@1.9.0)
       '@orpc/otel': 1.12.3(@opentelemetry/api@1.9.0)(@opentelemetry/instrumentation@0.203.0(@opentelemetry/api@1.9.0))
       '@orpc/server': 1.8.1(@opentelemetry/api@1.9.0)
-      '@orpc/zod': 1.8.1(@opentelemetry/api@1.9.0)(@orpc/contract@1.8.1(@opentelemetry/api@1.9.0))(@orpc/server@1.8.1(@opentelemetry/api@1.9.0))(zod@4.1.13)
+      '@orpc/zod': 1.8.1(@opentelemetry/api@1.9.0)(@orpc/contract@1.8.1(@opentelemetry/api@1.9.0))(@orpc/server@1.8.1(@opentelemetry/api@1.9.0))(zod@4.3.5)
       base-x: 5.0.1
       defu: 6.1.4
       drizzle-orm: 0.44.7(@opentelemetry/api@1.9.0)(kysely@0.27.6)
@@ -3658,7 +3661,7 @@ snapshots:
       kysely: 0.27.6
       neverthrow: 8.2.0
       superjson: 2.2.6
-      zod: 4.1.13
+      zod: 4.3.5
     transitivePeerDependencies:
       - '@aws-sdk/client-rds-data'
       - '@cloudflare/workers-types'
@@ -4551,7 +4554,7 @@ snapshots:
     transitivePeerDependencies:
       - '@opentelemetry/api'
 
-  '@orpc/zod@1.8.1(@opentelemetry/api@1.9.0)(@orpc/contract@1.8.1(@opentelemetry/api@1.9.0))(@orpc/server@1.8.1(@opentelemetry/api@1.9.0))(zod@4.1.13)':
+  '@orpc/zod@1.8.1(@opentelemetry/api@1.9.0)(@orpc/contract@1.8.1(@opentelemetry/api@1.9.0))(@orpc/server@1.8.1(@opentelemetry/api@1.9.0))(zod@4.3.5)':
     dependencies:
       '@orpc/contract': 1.8.1(@opentelemetry/api@1.9.0)
       '@orpc/json-schema': 1.8.1(@opentelemetry/api@1.9.0)
@@ -4560,7 +4563,7 @@ snapshots:
       '@orpc/shared': 1.8.1(@opentelemetry/api@1.9.0)
       escape-string-regexp: 5.0.0
       wildcard-match: 5.1.4
-      zod: 4.1.13
+      zod: 4.3.5
     transitivePeerDependencies:
       - '@opentelemetry/api'
       - crossws
@@ -5697,8 +5700,8 @@ snapshots:
       '@babel/parser': 7.28.5
       eslint: 9.39.1(jiti@2.6.1)
       hermes-parser: 0.25.1
-      zod: 4.1.13
-      zod-validation-error: 4.0.2(zod@4.1.13)
+      zod: 4.3.5
+      zod-validation-error: 4.0.2(zod@4.3.5)
     transitivePeerDependencies:
       - supports-color
 
@@ -5892,7 +5895,7 @@ snapshots:
       kysely: 0.28.9
       kysely-typeorm: 0.3.0(kysely@0.28.9)(typeorm@0.3.28)
       semver: 7.7.3
-      zod: 4.1.13
+      zod: 4.3.5
     optionalDependencies:
       drizzle-orm: 0.44.7(@opentelemetry/api@1.9.0)(kysely@0.27.6)
       typeorm: 0.3.28
@@ -7748,11 +7751,11 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zod-validation-error@4.0.2(zod@4.1.13):
+  zod-validation-error@4.0.2(zod@4.3.5):
     dependencies:
-      zod: 4.1.13
+      zod: 4.3.5
 
-  zod@4.1.13: {}
+  zod@4.3.5: {}
 
   zustand@5.0.9(@types/react@19.2.7)(react@19.2.0)(use-sync-external-store@1.6.0(react@19.2.0)):
     optionalDependencies:
