@@ -5,10 +5,10 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: frontmatter.title,
-  description: frontmatter.description,
+  description: `Big Pixel - ${frontmatter.description}`,
   openGraph: {
     title: frontmatter.title,
-    description: frontmatter.description,
+    description: `Big Pixel - ${frontmatter.description}`,
     url: 'https://big-pixel.com/about',
     siteName: 'Big Pixel',
     images: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: frontmatter.title,
-    description: frontmatter.description,
+    description: `Big Pixel - ${frontmatter.description}`,
     images: [
       {
         url: frontmatter.twitterImage,
