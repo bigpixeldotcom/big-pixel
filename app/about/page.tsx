@@ -1,6 +1,41 @@
 import Image from 'next/image';
 import PageStructure from '@/app/components/global/page-structure';
 import About, { frontmatter } from '@/markdown/about.mdx';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: frontmatter.title,
+  description: frontmatter.description,
+  openGraph: {
+    title: frontmatter.title,
+    description: frontmatter.description,
+    url: 'https://big-pixel.com/about',
+    siteName: 'Big Pixel',
+    images: [
+      {
+        url: frontmatter.ogImage,
+        width: 1200,
+        height: 630,
+        alt: 'Big Pixel - Web design for non-profits and ethical organisations',
+      },
+    ],
+    locale: 'en_GB',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: frontmatter.title,
+    description: frontmatter.description,
+    images: [
+      {
+        url: frontmatter.twitterImage,
+        width: 1200,
+        height: 675,
+        alt: 'Big Pixel - Web design for non-profits and ethical organisations',
+      },
+    ],
+  },
+};
 
 export default function AboutPage() {
   return (
