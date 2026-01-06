@@ -1,9 +1,11 @@
 import PageStructure from '@/app/components/global/page-structure';
 import ContactForm from '@/app/components/contact/contact-form';
+import { Toaster } from 'sonner';
 
 export default function AboutPage() {
   return (
     <PageStructure>
+      <Toaster />
       <div className="min-h-4/6">
         <main className="min-h-screen flex flex-col">
           <div className="mx-auto w-full max-w-6xl px-6">
