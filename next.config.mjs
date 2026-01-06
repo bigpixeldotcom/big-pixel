@@ -1,9 +1,8 @@
-import type { NextConfig } from 'next';
 import createMDX from '@next/mdx';
 import { withBotId } from 'botid/next/config';
 
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
   async rewrites() {
     return [
@@ -15,6 +14,10 @@ const nextConfig: NextConfig = {
   },
 };
 
-const withMDX = createMDX({});
+const withMDX = createMDX({
+  options: {
+    remarkPlugins: ['remark-gfm',]
+  }
+});
 
 export default withBotId(withMDX(nextConfig));

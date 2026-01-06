@@ -35,6 +35,27 @@ const components: MDXComponents = {
       {...(props as ImageProps)}
     />
   ),
+  table: ({ children }) => (
+    <table className="relative min-w-full divide-y divide-metal-400 dark:divide-white/15">
+      {children}
+    </table>
+  ),
+  th: ({ children }) => (
+    <th
+      scope="col"
+      className="px-3 py-3.5 text-left text-sm font-semibold text-metal-900 sm:pl-6 dark:text-white"
+    >
+      {children}
+    </th>
+  ),
+  tbody: ({ children }) => (
+    <tbody className="divide-y divide-metal-200 dark:divide-white/10">{children}</tbody>
+  ),
+  td: ({ children }) => (
+    <td className="px-3 py-4 text-sm whitespace-wrap text-metal-600 dark:text-metal-400">
+      {children}
+    </td>
+  ),
 };
 
 export function useMDXComponents(): MDXComponents {
