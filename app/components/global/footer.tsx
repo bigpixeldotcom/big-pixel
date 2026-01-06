@@ -3,15 +3,11 @@ import Link from 'next/link';
 
 const legals = [
   {
-    name: 'Privacy notice',
-    href: '/notice',
-  },
-  {
     name: 'Cookie policy',
     href: '/cookies',
   },
   {
-    name: 'Privacy settings',
+    name: 'Privacy notice',
     href: '/privacy',
   },
 ];
