@@ -19,7 +19,7 @@ export default function AboutPage() {
               </div>
               <div className="col-span-full md:col-span-3 lg:col-span-2">
                 <Image
-                  src={frontmatter.coverImage}
+                  src={frontmatter.coverImage ?? '/pages/headshot-1080-gradient.png'}
                   width={1024}
                   height={1024}
                   alt="Portrait photo of James Beston"
