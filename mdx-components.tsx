@@ -29,9 +29,9 @@ const components: MDXComponents = {
   img: (props) => (
     <Image
       sizes="100vw"
-      width={1024}
-      height={1024}
-      className="mx-auto rounded-2xl md:rounded-4xl w-full md:w-3/4"
+      width={1600}
+      height={1600}
+      className="mx-auto rounded-2xl md:rounded-4xl w-full"
       {...(props as ImageProps)}
     />
   ),
