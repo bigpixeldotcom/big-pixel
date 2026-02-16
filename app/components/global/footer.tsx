@@ -33,6 +33,10 @@ export default function Footer() {
               Registered address: Hardwick House, Agricultural Hall Plain, Norwich, England, NR1 3FS
             </p>
           </div>
+          <iframe
+            src="https://registry.blockmarktech.com/certificates/c7821b2f-c97a-405e-8dc1-654b61218eb1/widget/?tooltip_position=top_left&theme=transparent&hover=t"
+            style={{ border: 'none', height: '120px', width: '120px' }}
+          ></iframe>
           <div className="flex flex-col lg:justify-end gap-y-2">
             <ul role="list" className="text-sm space-y-3 lg:text-right">
               {legals.map((item) => (
